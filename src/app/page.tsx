@@ -1,15 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { LoginForm } from '@/components/auth/login-form'
-import { RegisterForm } from '@/components/auth/register-form'
-import { MindMapEditorWrapper } from '@/components/mindmap/mindmap-editor'
-import { MindMapToolbar } from '@/components/mindmap/mindmap-toolbar'
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { useMindMapStore } from '@/store/mindmap-store'
-import { exportToJSON, exportToImage, captureCanvasAsImage } from '@/lib/export-utils'
+import { LoginForm } from '../components/auth/login-form'
+import { RegisterForm } from '../components/auth/register-form'
+import { MindMapEditorWrapper } from '../components/mindmap/mindmap-editor'
+import { MindMapToolbar } from '../components/mindmap/mindmap-toolbar'
+import { Button } from '../components/ui/button'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../components/ui/dialog'
+import { Input } from '../components/ui/input'
+import { useMindMapStore } from '../store/mindmap-store'
+import { exportToJSON, exportToImage, captureCanvasAsImage } from '../lib/export-utils'
 
 export default function Home() {
   const [user, setUser] = useState<any>(null)

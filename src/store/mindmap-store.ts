@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { Node, Edge, NodeChange, EdgeChange, applyNodeChanges, applyEdgeChanges } from 'reactflow'
-import { MindMapData, NodeData, EdgeData } from '@/types/mindmap'
-import { generateId } from '@/lib/utils'
+import { MindMapData, NodeData, EdgeData } from '../types/mindmap'
+import { generateId } from '../lib/utils'
 
 interface MindMapState {
   // Current mind map data

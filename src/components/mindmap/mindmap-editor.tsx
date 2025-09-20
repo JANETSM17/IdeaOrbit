@@ -19,11 +19,11 @@ import ReactFlow, {
 } from 'reactflow'
 import 'reactflow/dist/style.css'
 
-import { useMindMapStore } from '@/store/mindmap-store'
+import { useMindMapStore } from '../../store/mindmap-store'
 import { CustomNode } from './custom-node'
 import { MindMapToolbar } from './mindmap-toolbar'
-import { generateId } from '@/lib/utils'
-import { captureCanvasAsImage } from '@/lib/export-utils'
+import { generateId } from '../../lib/utils'
+import { captureCanvasAsImage } from '../../lib/export-utils'
 
 const nodeTypes: NodeTypes = {
   default: CustomNode,

@@ -2,9 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Handle, Position, NodeProps } from 'reactflow'
-import { useMindMapStore } from '@/store/mindmap-store'
-import { Button } from '@/components/ui/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { useMindMapStore } from '../../store/mindmap-store'
+import { Button } from '../ui/button'
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import { 
   Bold, 
   Italic, 

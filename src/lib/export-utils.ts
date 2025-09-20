@@ -1,4 +1,4 @@
-import { MindMapData } from '@/types/mindmap'
+import { MindMapData } from '../types/mindmap'
 
 export function exportToJSON(data: MindMapData, filename: string = 'mindmap.json') {
   const dataStr = JSON.stringify(data, null, 2)
