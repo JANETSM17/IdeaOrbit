@@ -162,12 +162,13 @@ export function MindMapEditor() {
         <Controls />
         <MiniMap
           nodeStrokeColor={(n) => {
-            if (n.style?.background) return n.style.background
-            return '#eee'
+            // Use backgroundColor from node data if available, else fallback
+            const bg = (n.data?.style?.backgroundColor as string | undefined) ?? '#eee';
+            return bg;
           }}
           nodeColor={(n) => {
-            if (n.style?.background) return n.style.background
-            return '#fff'
+            const bg = (n.data?.style?.backgroundColor as string | undefined) ?? '#fff';
+            return bg;
           }}
           nodeBorderRadius={2}
         />
