@@ -70,7 +70,7 @@ export function CustomNode({ data, id }: NodeProps) {
     deleteNode(id)
   }
 
-  const nodeStyle = {
+  const nodeStyle: React.CSSProperties = {
     backgroundColor: data.style?.backgroundColor || '#ffffff',
     borderColor: data.style?.borderColor || '#000000',
     color: data.style?.color || '#000000',
